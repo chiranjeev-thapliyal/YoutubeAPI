@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loadVideoByCountry()">
+    <nav>
+      <div class="nav_container">
+        <div class="left">
+          <span><i class="fas fa-bars"></i></span>
+          <img
+            onclick="window.location.href='index.html'"
+            src="./navIcon.svg"
+            alt="youtube logo"
+          />
+        </div>
+        <div class="inputDiv">
+          <input type="text" id="searchBox" />
+          <button onclick="getVideos()">
+            <span> <i class="fas fa-search"></i></span>
+          </button>
+          <span><i class="fas fa-microphone"></i></span>
+        </div>
+        <div class="right">
+          <img src="./video.svg" alt="" />
+          <img src="./grid.svg" alt="" />
+          <span><i class="fas fa-bell"></i></span>
+          <img
+            src="https://yt3.ggpht.com/yti/APfAmoHrhFjjEjjBo7VFvRGkTBtkdV5DYLdX42ZwFw=s88-c-k-c0x00ffffff-no-rj-mo"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+    <div id="allVideos">
+      <!-- <div id="mostPopular">
+        <div class="popularCard">
+          <img src="https://i.ytimg.com/vi/bGKaBH29pUI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAopn81nRetXHHWBNMnUxRGJguyhg" alt="">
+          <div class="popularCardContent">
+            <h3 class="popularCardTitle">Session 2 - Programming Techniques | Learn DSA</h3>
+            <p class="popularChannelName">Learn DSA</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="videoCard">
+        <img
+          src="https://i.ytimg.com/an_webp/BrNot_J60Do/mqdefault_6s.webp?du=3000&sqp=CPKYm4gG&rs=AOn4CLBc77WBLGB0UgqbTVkNqVCsXA-enQ"
+          alt=""
+          class="videoCardImage"
+        />
+        <div class="videoContent">
+          <h2 class="videoTitle">Experiencing Plaid</h2>
+          <h4 class="videoChannel">
+            Tesla <i class="fas fa-check-circle"></i>
+          </h4>
+          <p class="videoDesc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur, eum.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- <div id="noResult">
+        <img src="./no-result.svg" alt="no video found" class="noVideoImage" />
+        <h2 class="noResultHeading">No results found</h2>
+        <h4 class="noResultDesc">Try different keywords or remove search filters</h4>
+      </div> -->
+
+      <!-- <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BrNot_J60Do"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+    </div>
+  </body>
+</html>
+
+<script
+  src="https://kit.fontawesome.com/7fc87d8fcc.js"
+  crossorigin="anonymous"
+></script>
+<script src="./script.js"></script>
